@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Full Stack Developer • Tech Builder • Startup Mindset">
+    <title>Portfolio - Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+            <div class="loader-text">Loading Experience</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="three-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Your Name</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer • Tech Builder • Startup Mindset</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#" class="btn btn-outline" id="download-resume">
+                        <span>Download Resume</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>Scroll Down</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-wrapper">
+                <div class="about-left" data-aos="fade-right" data-aos-delay="100">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-glow"></div>
+                            <div class="profile-image">
+                                <svg width="250" height="250" viewBox="0 0 250 250">
+                                    <defs>
+                                        <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="125" cy="125" r="100" fill="url(#profileGradient)" opacity="0.2" />
+                                    <text x="125" y="145" text-anchor="middle" fill="#00d9ff" font-size="70"
+                                        font-family="Orbitron" font-weight="bold">YN</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right" data-aos="fade-left" data-aos-delay="200">
+                    <div class="about-text-content">
+                        <p class="about-intro">
+                            I'm a <span class="highlight-text">Full Stack Developer</span> with a passion for building
+                            innovative solutions and bringing ideas to life. With a <span class="highlight-text">startup
+                                mindset</span>,
+                            I approach every project as an opportunity to create something meaningful and impactful.
+                        </p>
+                        <p class="about-intro">
+                            My journey in tech is driven by curiosity and a commitment to continuous learning.
+                            I specialize in creating seamless user experiences while architecting robust backend
+                            systems.
+                            Whether it's prototyping a new idea or scaling an existing platform, I thrive on solving
+                            complex problems with elegant solutions.
+                        </p>
+
+                        <div class="qualities-grid">
+                            <div class="quality-box" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="quality-icon">💡</div>
+                                <div class="quality-label">Problem Solver</div>
+                            </div>
+                            <div class="quality-box" data-aos="zoom-in" data-aos-delay="350">
+                                <div class="quality-icon">🚀</div>
+                                <div class="quality-label">Startup Mindset</div>
+                            </div>
+                            <div class="quality-box" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="quality-icon">🎯</div>
+                                <div class="quality-label">Tech-Savvy</div>
+                            </div>
+                            <div class="quality-box" data-aos="zoom-in" data-aos-delay="450">
+                                <div class="quality-icon">🤝</div>
+                                <div class="quality-label">Team Leader</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <!-- Full Stack Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Full Stack Development</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-name">HTML/CSS</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚡</div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🟢</div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-name">Databases</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔌</div>
+                            <div class="skill-name">APIs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System & Tech Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">System & Technology</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">🐧</div>
+                            <div class="skill-name">Linux</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🪟</div>
+                            <div class="skill-name">Windows</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-name">Networking</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">Cloud</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐳</div>
+                            <div class="skill-name">Docker</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔧</div>
+                            <div class="skill-name">DevOps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Professional Skills</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">👥</div>
+                            <div class="skill-name">Leadership</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">💬</div>
+                            <div class="skill-name">Communication</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🎯</div>
+                            <div class="skill-name">Consistency</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🧩</div>
+                            <div class="skill-name">Problem Solving</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">Prototyping</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-name">Project Management</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                A showcase of my recent work and innovative solutions
+            </p>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-visual">
+                        <div class="project-bg-gradient gradient-1"></div>
+                        <div class="project-icon">🛒</div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>E-Commerce Platform</h3>
+                                <p>Full-stack solution</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">E-Commerce Platform</h3>
+                        <p class="project-desc">
+                            A full-stack e-commerce solution with real-time inventory management,
+                            payment integration, and advanced analytics dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="action-btn primary-btn">
+                                <span>View Demo</span>
+                            </a>
+                            <a href="#" class="action-btn secondary-btn">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-visual">
+                        <div class="project-bg-gradient gradient-2"></div>
+                        <div class="project-icon">📋</div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>Task Management</h3>
+                                <p>Collaborative tool</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">Task Management System</h3>
+                        <p class="project-desc">
+                            Collaborative task management tool with real-time updates,
+                            team collaboration features, and productivity analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="action-btn primary-btn">
+                                <span>View Demo</span>
+                            </a>
+                            <a href="#" class="action-btn secondary-btn">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="project-visual">
+                        <div class="project-bg-gradient gradient-3"></div>
+                        <div class="project-icon">🤖</div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3>AI Chat App</h3>
+                                <p>Smart conversations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-name">AI Chat Application</h3>
+                        <p class="project-desc">
+                            Real-time chat application with AI-powered responses,
+                            sentiment analysis, and smart conversation routing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">WebSocket</span>
+                            <span class="tech-badge">TensorFlow</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="action-btn primary-btn">
+                                <span>View Demo</span>
+                            </a>
+                            <a href="#" class="action-btn secondary-btn">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience & Achievements</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                My journey in tech and leadership
+            </p>
+
+            <div class="experience-timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-entry" data-aos="fade-up" data-aos-delay="150">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <span class="experience-date">2024 - Present</span>
+                            <span class="experience-badge">Current</span>
+                        </div>
+                        <h3 class="experience-title">Full Stack Developer</h3>
+                        <p class="experience-desc">
+                            Building scalable web applications and leading technical initiatives
+                            for startup projects. Focus on modern tech stack and agile methodologies.
+                        </p>
+                        <div class="experience-icon">💻</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-entry" data-aos="fade-up" data-aos-delay="250">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <span class="experience-date">2023 - 2024</span>
+                        </div>
+                        <h3 class="experience-title">Cultural Committee Lead</h3>
+                        <p class="experience-desc">
+                            Led event organization and team coordination for college cultural activities.
+                            Managed budgets, timelines, and cross-functional teams.
+                        </p>
+                        <div class="experience-icon">🎭</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-entry" data-aos="fade-up" data-aos-delay="350">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <span class="experience-date">2022 - 2023</span>
+                        </div>
+                        <h3 class="experience-title">Technical Experimentation</h3>
+                        <p class="experience-desc">
+                            Explored various technologies and frameworks through personal projects.
+                            Built prototypes and proof-of-concepts for innovative ideas.
+                        </p>
+                        <div class="experience-icon">🔬</div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-entry" data-aos="fade-up" data-aos-delay="450">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-ring"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <span class="experience-date">2021 - 2022</span>
+                        </div>
+                        <h3 class="experience-title">Started Coding Journey</h3>
+                        <p class="experience-desc">
+                            Began learning web development fundamentals and computer science principles.
+                            Completed multiple online courses and built first projects.
+                        </p>
+                        <div class="experience-icon">🚀</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Let's build something amazing together
+            </p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="150">
+                    <h3 class="panel-title">Let's Connect</h3>
+                    <p class="panel-description">
+                        I'm always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link-item">
+                            <div class="link-icon">📧</div>
+                            <div class="link-details">
+                                <span class="link-label">Email</span>
+                                <span class="link-value">your.email@example.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/yourusername" target="_blank" class="contact-link-item">
+                            <div class="link-icon">💻</div>
+                            <div class="link-details">
+                                <span class="link-label">GitHub</span>
+                                <span class="link-value">@yourusername</span>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link-item">
+                            <div class="link-icon">💼</div>
+                            <div class="link-details">
+                                <span class="link-label">LinkedIn</span>
+                                <span class="link-value">Your Name</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel" data-aos="fade-left" data-aos-delay="250">
+                    <form id="contact-form" class="modern-form">
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                            <div class="field-border"></div>
+                        </div>
+
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                            <div class="field-border"></div>
+                        </div>
+
+                        <div class="form-field">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                            <div class="field-border"></div>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                            <div class="field-border"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-shine"></div>
+                        </button>
+                    </form>
+
+                    <div id="form-success" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <p>Message sent successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p class="footer-tagline">Built with passion and cutting-edge technology</p>
+        </div>
+    </footer>
+
+    <!-- Particle Background Container -->
+    <div id="particles-js"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="js/loader.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
